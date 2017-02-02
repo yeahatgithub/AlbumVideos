@@ -1,0 +1,25 @@
+/* pages/showVideo/showVideo.wxss */
+.icon-close{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+.video {
+  width: 100%;
+  margin-top: 80px;
+}
+.btn-prev-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+}
+.btn-prev, .btn-next{
+    width: 40%;
+    background:#f49d0d;
+    color:blueviolet;
+}
+.button-hover {
+  background-color: #f9bd3a;
+}

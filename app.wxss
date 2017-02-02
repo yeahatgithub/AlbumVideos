@@ -1,0 +1,17 @@
+/**app.wxss**/
+/* 让页面高占满全屏，类似给 html 设置 100% 让子集元素的百分比为全屏的百分比 */
+page {
+  height: 100%;
+}
+/* border-box 非常方便我们计算宽高 */
+view, text {
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+<swiper class="album-swiper" indicator-dots="true" autoplay="{{autoplay}}" duration="1000" bindchange="changeAlbum">
+    <block wx:for="{{albums}}" wx:key="title">
+        <swiper-item class="swiper-item">
+            <image src="{{item.cover}}" class="image-slide"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<!-- scroll-top属性控制列表第一次或刷新后的显示区域。利用scrollTop变量，可以由js代码来控制刷新后的显示区域 -->
+<scroll-view class="video-list" scroll-y="true" scroll-top="{{scrollTop}}" >
+    <block wx:for="{{videoList}}" wx:key="id">
+        <view class="scroll-item" catchtap="playVideo" data-id="{{index}}">
+            <image src="{{item.cover}}" class="item-image" />
+            <view class="videoInfo">
+                <text class="videoTitle">{{item.title}}</text>
+                <text class="video-play-cnt">{{item.play_count}}次播放</text>
+            </view>
+        </view>
+    </block>
+</scroll-view>

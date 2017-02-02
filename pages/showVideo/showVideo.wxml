@@ -1,0 +1,10 @@
+
+<view class = "show-video">
+    <icon class="icon-close" type="clear" size="40" color="rgba(100, 100, 100, 0.5)" catchtap="closeVideo"/>
+    <video class="video" src="{{videoUrl}}" autoplay="true" controls/>
+    <text>第{{videoIndexInAlbum + 1}}集: {{videoTitle}}</text>
+    <view class="btn-prev-next">
+        <button class="btn-prev" catchtap="prevVideo">上一集</button>
+        <button class="btn-next" catchtap="nextVideo">下一集</button>
+    </view>
+</view>

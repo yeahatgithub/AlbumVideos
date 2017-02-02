@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/album/album",
+    "pages/index/index",
+    "pages/showVideo/showVideo",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8ac09",
+    "navigationBarTitleText": "敢玩原创视频",
+    "navigationBarTextStyle":"black"
+  }
+}
